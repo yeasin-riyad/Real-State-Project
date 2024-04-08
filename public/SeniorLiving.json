@@ -1,0 +1,63 @@
+{
+    "SeniorLiving":[
+
+        {
+                
+            "id":1,
+            "sub_category": "Senior Living Communities",
+            "estate_title": "Retirement Villa with Resort Amenities",
+            "segment_name": "Senior Living",
+            "description": "A retirement villa offering resort-style amenities and a vibrant community for active seniors.",
+            "price": "$400,000",
+            "status": "sale",
+            "area": "2000 sq ft",
+            "location": "Sunshine Valley Estates, Retirement City, USA",
+            "facilities": ["Clubhouse", "Swimming pool", "Fitness center"],
+            "image": "https://i.ibb.co/FhmFmRN/pubail-resort-club.jpg",
+            "button": "View Property"
+          },
+          {
+            "id":2,
+            "sub_category": "Senior Living Communities",
+            "estate_title": "Assisted Living Apartments for Seniors",
+            "segment_name": "Assisted Living",
+            "description": "Modern assisted living apartments designed to provide comfort and support for seniors who need assistance with daily activities.",
+            "price": "$3,500/month",
+            "status": "rent",
+            "area": "1000 sq ft",
+            "location": "Golden Years Residence, Seniors Boulevard, USA",
+            "facilities": ["24/7 caregiver support", "Meal service", "Social activities"],
+            "image": "https://i.ibb.co/MPm7sm2/senior-living.jpg",
+            "button": "View Property"
+          },
+          {
+            "id":3,
+            "sub_category": "Senior Living Communities",
+            "estate_title": "Active Senior Community with Golf Course",
+            "segment_name": "Senior Living",
+            "description": "An active senior community offering resort-style amenities, including a golf course and social activities.",
+            "price": "$550,000",
+            "status": "sale",
+            "area": "2800 sq ft",
+            "location": "Sunset Meadows, Active Living, USA",
+            "facilities": ["Golf course", "Clubhouse", "Fitness center"],
+            "image": "https://i.ibb.co/tQFks6J/Kurmitola-Golf-Club-26617164703.jpg",
+            "button": "View Property"
+          },
+          {
+            "id":4,
+            "sub_category": "Senior Living Communities",
+            "estate_title": "Assisted Living Residence with Memory Care",
+            "segment_name": "Assisted Living",
+            "description": "An assisted living residence specializing in memory care, providing personalized support for residents with memory impairments.",
+            "price": "$4,000/month",
+            "status": "rent",
+            "area": "1200 sq ft",
+            "location": "Memory Lane Residence, Senior Care Village, USA",
+            "facilities": ["Memory care services", "Secure environment", "Therapeutic activities"],
+            "image": "https://i.ibb.co/k6bhKBJ/Senior-living-residents-lifting-weights-together-in-an-exercise-class.webp",
+            "button": "View Property"
+          }
+
+    ]
+}

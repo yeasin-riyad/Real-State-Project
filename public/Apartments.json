@@ -1,0 +1,62 @@
+{
+    "Apartments":[
+
+        {
+            "id": 1,
+            "sub_category": "Apartments",
+            "estate_title": "Modern City Apartment",
+            "segment_name": "Apartment",
+            "description": "A sleek and modern apartment located in the heart of the city, offering urban living at its finest.",
+            "price": "$2,000/month",
+            "status": "rent",
+            "area": "1200 sq ft",
+            "location": "Downtown Tower, Cityscape, USA",
+            "facilities": ["City views", "Gym", "Swimming pool"],
+            "image": "https://i.ibb.co/pjMLjTp/550d19-b585291ec286484e8fe04b1ace875f5c-mv2-d-2000-2667-s-2.jpg",
+            "button": "View Property"
+          },
+          {
+            "id": 2,
+            "sub_category": "Apartments",
+            "estate_title": "Luxury Waterfront Apartment",
+            "segment_name": "Apartment",
+            "description": "A luxurious waterfront apartment with panoramic views of the bay, perfect for upscale urban living.",
+            "price": "$3,500/month",
+            "status": "rent",
+            "area": "1800 sq ft",
+            "location": "Harbor View Residences, Bayfront, USA",
+            "facilities": ["Waterfront views", "Concierge service", "Fitness center"],
+            "image": "https://i.ibb.co/vd0zJpw/485465161.jpg",
+            "button": "View Property"
+          },
+          {
+            "id": 3,
+            "sub_category": "Apartments",
+            "estate_title": "Chic Studio Apartment in Trendy Neighborhood",
+            "segment_name": "Apartment",
+            "description": "A chic studio apartment located in a trendy neighborhood, perfect for young professionals or students.",
+            "price": "$1,500/month",
+            "status": "rent",
+            "area": "700 sq ft",
+            "location": "Arts District Lofts, Downtown, USA",
+            "facilities": ["Modern kitchen", "Walk-in closet", "On-site laundry"],
+            "image": "https://i.ibb.co/1672510/516689237.jpg",
+            "button": "View Property"
+          },
+          {
+            "id": 4,
+            "sub_category": "Apartments",
+            "estate_title": "Luxury High-Rise Apartment with Skyline Views",
+            "segment_name": "Apartment",
+            "description": "A luxury high-rise apartment offering breathtaking skyline views and upscale amenities.",
+            "price": "$4,000/month",
+            "status": "rent",
+            "area": "1800 sq ft",
+            "location": "Skyline Towers, Urban Center, USA",
+            "facilities": ["Floor-to-ceiling windows", "Gourmet kitchen", "24/7 concierge"],
+            "image": "https://i.ibb.co/mXh4N2k/images.jpg",
+            "button": "View Property"
+          }
+
+    ]
+}

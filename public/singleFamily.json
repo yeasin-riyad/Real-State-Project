@@ -1,0 +1,63 @@
+{
+
+    "Single-Family-Homes":[
+        {
+            "id": 1,
+            "sub_category": "Single-Family Homes",
+            "estate_title": "Beautiful Family Home in Suburban Area",
+            "segment_name": "Family Home",
+            "description": "A charming single-family home with spacious rooms and a lovely backyard garden.",
+            "price": "$500,000",
+            "status": "sale",
+            "area": "2500 sq ft",
+            "location": "Suburbia Estates, Anytown, USA",
+            "facilities": ["Spacious living room", "Backyard garden", "Modern kitchen"],
+            "image": "https://i.ibb.co/s947WN7/home.jpg",
+            "button": "View Property"
+          },
+          {
+            "id": 2,
+            "sub_category": "Single-Family Homes",
+            "estate_title": "Cozy Cottage with Scenic Views",
+            "segment_name": "Cottage",
+            "description": "A cozy cottage nestled in the hills, offering breathtaking views and tranquility.",
+            "price": "$300,000",
+            "status": "sale",
+            "area": "1500 sq ft",
+            "location": "Hillside Retreat, Countryside, USA",
+            "facilities": ["Scenic views", "Fireplace", "Wrap-around porch"],
+            "image": "https://i.ibb.co/s947WN7/home.jpg",
+            "button": "View Property"
+          },
+          {
+            "id": 3,
+            "sub_category": "Single-Family Homes",
+            "estate_title": "Modern Suburban Home with Pool",
+            "segment_name": "Family Home",
+            "description": "A modern single-family home featuring a swimming pool and contemporary design elements.",
+            "price": "$600,000",
+            "status": "sale",
+            "area": "2800 sq ft",
+            "location": "Sunnydale Estates, Suburban Oasis, USA",
+            "facilities": ["Swimming pool", "Open floor plan", "Garden patio"],
+            "image": "https://i.ibb.co/MVz4PzP/992ef0a6f34640c19094f48c8f565bb0-KAA-6544-HDR-870x555.jpg",
+            "button": "View Property"
+          },
+          {
+            "id": 4,
+            "sub_category": "Single-Family Homes",
+            "estate_title": "Victorian Style Family Residence",
+            "segment_name": "Family Home",
+            "description": "An elegant Victorian-style home with ornate details and spacious interiors, perfect for family living.",
+            "price": "$700,000",
+            "status": "sale",
+            "area": "3200 sq ft",
+            "location": "Heritage Lane, Historic District, USA",
+            "facilities": ["Grand staircase", "Wrap-around porch", "Garden gazebo"],
+            "image": "https://i.ibb.co/Yy90pZ5/img-20221110-wa0002.jpg",
+            "button": "View Property"
+          }
+
+    ]
+
+}

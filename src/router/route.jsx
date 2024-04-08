@@ -1,3 +1,6 @@
+import Home from "../components/Home/Home";
+import Profile from "../components/Profile/Profile";
+import UpdateProfile from "../components/UpdateProfile/UpdateProfile";
 import Root from "../root/Root";
 import {
   createBrowserRouter,
@@ -9,7 +12,23 @@ import {
 const router=createBrowserRouter([
     {
         path:'/',
-        element:<Root></Root>
+        element:<Root></Root>,
+        children:[
+          {
+            path:'/',
+            element:<Home></Home>
+
+          },
+          {
+            path:'/updateprofile',
+            element:<UpdateProfile></UpdateProfile>
+          },
+          {
+            path:'/profile',
+            element:<Profile></Profile>
+          }
+        ]
+    
         
 
     }

@@ -1,0 +1,64 @@
+{
+    "Townhouse":[
+
+        {
+
+            "id":1,
+            "sub_category": "Townhouse",
+          
+            "estate_title": "Modern Townhouse with Rooftop Terrace",
+            "segment_name": "Townhouse",
+            "description": "A modern townhouse featuring sleek design elements and a rooftop terrace, perfect for entertaining.",
+            "price": "$600,000",
+            "status": "sale",
+            "area": "2200 sq ft",
+            "location": "Cityscape Townhomes, Urban Living, USA",
+            "facilities": ["Rooftop terrace", "Open-concept layout", "Attached garage"],
+            "image": "https://i.ibb.co/vHyJ26r/Render-NHA-0-Cover.jpg",
+            "button": "View Property"
+          },
+          {
+            "id":2,
+           "sub_category": "Townhouse",
+            "estate_title": "Traditional Townhouse in Historic District",
+            "segment_name": "Townhouse",
+            "description": "A charming traditional townhouse nestled in a historic district, boasting period details and character.",
+            "price": "$450,000",
+            "status": "sale",
+            "area": "1800 sq ft",
+            "location": "Heritage Row, Historic Town, USA",
+            "facilities": ["Period features", "Garden courtyard", "Fireplace"],
+            "image": "https://i.ibb.co/G9zCsZT/61572f8f40777.jpg",
+            "button": "View Property"
+          },
+          {
+            "id":3,
+            "sub_category": "Townhouse",
+            "estate_title": "Luxury Townhome Community with Amenities",
+            "segment_name": "Townhouse",
+            "description": "A luxury townhome community offering resort-style amenities and upscale living spaces.",
+            "price": "$800,000",
+            "status": "sale",
+            "area": "2800 sq ft",
+            "location": "Summit Estates, Luxury Living, USA",
+            "facilities": ["Community clubhouse", "Swimming pool", "Fitness center"],
+            "image": "https://i.ibb.co/jTYcbLz/628622fc260588ecf406660c-20220211-ANANTA-RETAIL-TOWERS-NIGHTLIGHT.jpg",
+            "button": "View Property"
+          },
+          {
+            "id":4,
+           "sub_category": "Townhouse",
+            "estate_title": "Contemporary Townhouse with Waterfront Views",
+            "segment_name": "Townhouse",
+            "description": "A contemporary townhouse offering stunning waterfront views and modern design features.",
+            "price": "$750,000",
+            "status": "sale",
+            "area": "2500 sq ft",
+            "location": "Bayfront Residences, Coastal Living, USA",
+            "facilities": ["Waterfront views", "Private dock", "Spa-like master suite"],
+            "image": "path/to/image22.jpg",
+            "button": "View Property"
+          }
+
+    ]
+}

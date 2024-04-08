@@ -1,0 +1,62 @@
+{
+    "vacationRentals":[
+
+        {
+            "id":1,
+            "sub_category": "Vacation Rentals",
+            "estate_title": "Beachfront Villa for Family Getaways",
+            "segment_name": "Villa Rental",
+            "description": "A luxurious beachfront villa offering an ideal retreat for family vacations, with private access to the beach and stunning ocean views.",
+            "price": "$800/night",
+            "status": "rent",
+            "area": "3000 sq ft",
+            "location": "Sandy Shores Resort, Beachfront Paradise, USA",
+            "facilities": ["Private beach access", "Infinity pool", "Outdoor dining area"],
+            "image": "https://i.ibb.co/SttRw81/unnamed.jpg",
+            "button": "View Property"
+          },
+          {
+            "id":2,
+            "sub_category": "Vacation Rentals",
+            "estate_title": "Mountain Cabin for Nature Escapes",
+            "segment_name": "Cabin Rental",
+            "description": "A cozy mountain cabin nestled in the woods, perfect for a peaceful retreat amidst nature's beauty.",
+            "price": "$200/night",
+            "status": "rent",
+            "area": "1200 sq ft",
+            "location": "Woodland Retreat, Mountain Valley, USA",
+            "facilities": ["Hiking trails", "Fire pit", "Wrap-around deck"],
+            "image": "https://i.ibb.co/RPHc4N6/9eae735973f646ffadbb623884657049-MG-0792.jpg",
+            "button": "View Property"
+          },
+          {
+            "id":3,
+            "sub_category": "Vacation Rentals",
+            "estate_title": "Luxury Ski Chalet in Mountain Resort",
+            "segment_name": "Chalet Rental",
+            "description": "A luxurious ski chalet nestled in a mountain resort, offering direct access to ski slopes and cozy accommodations.",
+            "price": "$600/night",
+            "status": "rent",
+            "area": "2500 sq ft",
+            "location": "Alpine Retreat, Mountain Village, USA",
+            "facilities": ["Ski-in/ski-out access", "Hot tub", "Fireplace"],
+            "image": "https://i.ibb.co/HDvHhQJ/images.jpg",
+            "button": "View Property"
+          },
+          {
+            "id":4,
+            "sub_category": "Vacation Rentals",
+            "estate_title": "Beachfront Villa for Tropical Getaways",
+            "segment_name": "Villa Rental",
+            "description": "A luxurious beachfront villa offering a tropical oasis with private beach access, ideal for relaxing getaways.",
+            "price": "$800/night",
+            "status": "rent",
+            "area": "3000 sq ft",
+            "location": "Palm Paradise, Beachfront Haven, USA",
+            "facilities": ["Private beach access", "Infinity pool", "Outdoor dining area"],
+            "image": "https://i.ibb.co/rstx7NQ/Villa-2-pool-La-Palmearie-1-1200.jpg",
+            "button": "View Property"
+          }
+
+    ]
+}
