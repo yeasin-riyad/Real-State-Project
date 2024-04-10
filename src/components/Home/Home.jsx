@@ -1,4 +1,5 @@
 import Apartment from "../Estates/Apartment"
+import SingleFamily from "../SingleFamily/SingleFamily"
 import Slider from "../Slider/Slider"
 
 
@@ -8,6 +9,7 @@ const Home = () => {
     <div>
         <Slider></Slider>
         <Apartment></Apartment>
+        <SingleFamily></SingleFamily>
         
     </div>
   )
