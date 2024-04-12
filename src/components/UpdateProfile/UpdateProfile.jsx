@@ -1,8 +1,11 @@
 
 
 const UpdateProfile = () => {
+  const onRegister=()=>{
+    console.log("OnRegister..")
+  }
   return (
-    <div>UpdateProfile</div>
+   <div></div>
   )
 }
 

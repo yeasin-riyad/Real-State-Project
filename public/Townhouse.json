@@ -15,7 +15,11 @@
             "location": "Cityscape Townhomes, Urban Living, USA",
             "facilities": ["Rooftop terrace", "Open-concept layout", "Attached garage"],
             "image": "https://i.ibb.co/vHyJ26r/Render-NHA-0-Cover.jpg",
-            "button": "View Property"
+            "button": "View Details",
+            "bedrooms":2,
+            "bathrooms":2,
+            "kitchen": 1,
+            "car_parking":1
           },
           {
             "id":2,
@@ -29,7 +33,11 @@
             "location": "Heritage Row, Historic Town, USA",
             "facilities": ["Period features", "Garden courtyard", "Fireplace"],
             "image": "https://i.ibb.co/G9zCsZT/61572f8f40777.jpg",
-            "button": "View Property"
+            "button": "View Details",
+            "bedrooms":3,
+            "bathrooms":2,
+            "kitchen": 1,
+            "car_parking":2
           },
           {
             "id":3,
@@ -43,7 +51,11 @@
             "location": "Summit Estates, Luxury Living, USA",
             "facilities": ["Community clubhouse", "Swimming pool", "Fitness center"],
             "image": "https://i.ibb.co/jTYcbLz/628622fc260588ecf406660c-20220211-ANANTA-RETAIL-TOWERS-NIGHTLIGHT.jpg",
-            "button": "View Property"
+            "button": "View Details",
+            "bedrooms":2,
+            "bathrooms":2,
+            "kitchen": 1,
+            "car_parking":1
           },
           {
             "id":4,
@@ -56,8 +68,12 @@
             "area": "2500 sq ft",
             "location": "Bayfront Residences, Coastal Living, USA",
             "facilities": ["Waterfront views", "Private dock", "Spa-like master suite"],
-            "image": "path/to/image22.jpg",
-            "button": "View Property"
+            "image": "https://i.ibb.co/yXtfgf2/7c204c07-33fe-42c5-ada3-4327f844e074.webp",
+            "button": "View Details",
+            "bedrooms":4,
+            "bathrooms":3,
+            "kitchen": 1,
+            "car_parking":3
           }
 
     ]

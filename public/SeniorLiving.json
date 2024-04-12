@@ -14,7 +14,11 @@
             "location": "Sunshine Valley Estates, Retirement City, USA",
             "facilities": ["Clubhouse", "Swimming pool", "Fitness center"],
             "image": "https://i.ibb.co/FhmFmRN/pubail-resort-club.jpg",
-            "button": "View Property"
+            "button": "View Details",
+            "bedrooms":2,
+            "bathrooms":2,
+            "kitchen": 1,
+            "car_parking":1
           },
           {
             "id":2,
@@ -28,7 +32,11 @@
             "location": "Golden Years Residence, Seniors Boulevard, USA",
             "facilities": ["24/7 caregiver support", "Meal service", "Social activities"],
             "image": "https://i.ibb.co/MPm7sm2/senior-living.jpg",
-            "button": "View Property"
+            "button": "View Details",
+            "bedrooms":2,
+            "bathrooms":2,
+            "kitchen": 1,
+            "car_parking":1
           },
           {
             "id":3,
@@ -42,7 +50,11 @@
             "location": "Sunset Meadows, Active Living, USA",
             "facilities": ["Golf course", "Clubhouse", "Fitness center"],
             "image": "https://i.ibb.co/tQFks6J/Kurmitola-Golf-Club-26617164703.jpg",
-            "button": "View Property"
+            "button": "View Details",
+            "bedrooms":3,
+            "bathrooms":2,
+            "kitchen": 1,
+            "car_parking":1
           },
           {
             "id":4,
@@ -56,7 +68,11 @@
             "location": "Memory Lane Residence, Senior Care Village, USA",
             "facilities": ["Memory care services", "Secure environment", "Therapeutic activities"],
             "image": "https://i.ibb.co/k6bhKBJ/Senior-living-residents-lifting-weights-together-in-an-exercise-class.webp",
-            "button": "View Property"
+            "button": "View Details",
+            "bedrooms":3,
+            "bathrooms":2,
+            "kitchen": 1,
+            "car_parking":1
           }
 
     ]

@@ -13,7 +13,11 @@
             "location": "Campus Avenue, University Town, USA",
             "facilities": ["Study lounges", "Laundry facilities", "Recreation room"],
             "image": "https://i.ibb.co/qmMHdQC/housing-for-bangladeshi-students-in-australia.jpg",
-            "button": "View Property"
+            "button": "View Details",
+            "bedrooms":2,
+            "bathrooms":2,
+            "kitchen": 1,
+            "car_parking":1
           },
           {
             "sub_category": "Student Housing",
@@ -27,7 +31,11 @@
           "location": "Campus View Apartments, University District, USA",
           "facilities": ["Close to campus", "Individual leases", "Fitness center"],
           "image": "https://i.ibb.co/wW01cTT/1ef223e68468b8c73f118226a31ba513.jpg",
-          "button": "View Property"
+          "button": "View Details",
+          "bedrooms":2,
+          "bathrooms":2,
+          "kitchen": 1,
+          "car_parking":1
           },
           {
             "sub_category": "Student Housing",
@@ -41,7 +49,11 @@
             "location": "Co-op Commons, College Town, USA",
             "facilities": ["Communal kitchen", "Shared study rooms", "Community events"],
             "image": "https://i.ibb.co/9GB5C1M/students-relaxing-in-kitchen-of-shared-accommodati-2023-11-27-05-06-47-utc-1-scaled.jpg",
-            "button": "View Property"
+            "button": "View Details",
+            "bedrooms":1,
+            "bathrooms":1,
+            "kitchen": 1,
+            "car_parking":1
           },
           {
             "sub_category": "Student Housing",
@@ -55,7 +67,11 @@
             "location": "Campus Walk Townhomes, University District, USA",
             "facilities": ["Close to campus", "Private bathrooms", "On-site parking"],
             "image": "https://i.ibb.co/jW6KHvb/image.jpg",
-            "button": "View Property"
+            "button": "View Details",
+            "bedrooms":3,
+            "bathrooms":2,
+            "kitchen": 1,
+            "car_parking":2
           }
 
     ]

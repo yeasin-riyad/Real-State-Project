@@ -13,7 +13,11 @@
             "location": "Sandy Shores Resort, Beachfront Paradise, USA",
             "facilities": ["Private beach access", "Infinity pool", "Outdoor dining area"],
             "image": "https://i.ibb.co/SttRw81/unnamed.jpg",
-            "button": "View Property"
+            "button": "View Property",
+            "bedrooms":2,
+            "bathrooms":2,
+            "kitchen": 1,
+            "car_parking":1
           },
           {
             "id":2,
@@ -27,7 +31,11 @@
             "location": "Woodland Retreat, Mountain Valley, USA",
             "facilities": ["Hiking trails", "Fire pit", "Wrap-around deck"],
             "image": "https://i.ibb.co/RPHc4N6/9eae735973f646ffadbb623884657049-MG-0792.jpg",
-            "button": "View Property"
+            "button": "View Property",
+            "bedrooms":5,
+            "bathrooms":2,
+            "kitchen": 1,
+            "car_parking":1
           },
           {
             "id":3,
@@ -41,7 +49,11 @@
             "location": "Alpine Retreat, Mountain Village, USA",
             "facilities": ["Ski-in/ski-out access", "Hot tub", "Fireplace"],
             "image": "https://i.ibb.co/HDvHhQJ/images.jpg",
-            "button": "View Property"
+            "button": "View Property",
+            "bedrooms":4,
+            "bathrooms":2,
+            "kitchen": 1,
+            "car_parking":1
           },
           {
             "id":4,
@@ -55,7 +67,11 @@
             "location": "Palm Paradise, Beachfront Haven, USA",
             "facilities": ["Private beach access", "Infinity pool", "Outdoor dining area"],
             "image": "https://i.ibb.co/rstx7NQ/Villa-2-pool-La-Palmearie-1-1200.jpg",
-            "button": "View Property"
+            "button": "View Property",
+            "bedrooms":3,
+            "bathrooms":2,
+            "kitchen": 1,
+            "car_parking":1
           }
 
     ]

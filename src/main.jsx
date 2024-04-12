@@ -8,10 +8,18 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import router from './router/route.jsx';
+import UseContext from './components/ContextApi/AuthContext.jsx';
+// import UseContext from './components/ContextApi/AuthContext.jsx';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <UseContext>
     <RouterProvider router={router}/>
+    
+    </UseContext>
+   
+      
+
   </React.StrictMode>
 )

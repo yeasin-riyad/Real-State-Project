@@ -19,11 +19,10 @@ const SingleFamily = () => {
       </h1>
 
       <div className="grid mt-8 gap-x-5 gap-y-3 lg:grid-cols-2">
-        {singleFamiliesData.map((singleFamily, id) => (
-          <SingleFamilyCard key={id} singleFamily={singleFamily}>
-            {" "}
-          </SingleFamilyCard>
-        ))}
+
+        {
+          singleFamiliesData.map((singleFamily, id)=><SingleFamilyCard key={id} singleFamily={singleFamily}></SingleFamilyCard>)
+        }
       </div>
     </div>
   );

@@ -15,6 +15,7 @@ const Navbar = () => {
       <li><NavLink to='/'>Home</NavLink></li>
       <li><NavLink to='/updateprofile'>Update Profile</NavLink></li>
       <li><NavLink to='/profile'>Profile</NavLink></li>
+      <li><NavLink to='/login'>LogIn</NavLink></li>
       </ul>
     </div>
    <div className="flex gap-x-2  items-center ">
@@ -39,12 +40,15 @@ const Navbar = () => {
       <li><NavLink to='/'>Home</NavLink></li>
       <li><NavLink to='/updateprofile'>Update Profile</NavLink></li>
       <li><NavLink to='/profile'>Profile</NavLink></li>
+      <li><NavLink to='/login'>LogIn</NavLink></li>
       
       
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Button</a>
+  <div className="w-10 rounded-full">
+          <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+        </div>
   </div>
 </div>
     </div>
