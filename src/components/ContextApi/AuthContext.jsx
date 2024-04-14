@@ -4,8 +4,11 @@ import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, on
 
 import { GoogleAuthProvider } from "firebase/auth";
 import app from "../../Firebase/firebase.config";
+import { GithubAuthProvider } from "firebase/auth";
 
-const provider = new GoogleAuthProvider();
+const Googleprovider = new GoogleAuthProvider();
+const Githubprovider = new GithubAuthProvider();
+
 
 
 
@@ -19,13 +22,17 @@ const UseContext = ({children}) => {
     const [name,setName]=useState(null)
     const [loading,setLoading]=useState(true)
     
+    const GithubLogin=()=>{
+        setLoading(true)
+        return signInWithPopup(auth, Githubprovider);
+    }
 
     const GoogleLogin=()=>{
         setLoading(true)
-       return signInWithPopup(auth,provider)
+       return signInWithPopup(auth,Googleprovider)
     }
 
-    const CreateUserWithEmailAndPassword=(n,e,p,pass)=>{
+    const CreateUserWithEmailAndPassword=(e,p)=>{
         setLoading(true)
         return createUserWithEmailAndPassword(auth,e,p);
 
@@ -40,16 +47,20 @@ const UseContext = ({children}) => {
     }
     useEffect(()=>{
         const subscribe= onAuthStateChanged(auth,(user)=>{
-            setName(user?.email)
+           
             setLoading(false)
+            setName(null)
             
             if(user){
+                setName(user)
                 console.log("User is Registering");
+                console.log(user)
                
                 
               
                 
             }else{
+                
                 console.log("user is Logged Out..")
                 
                 
@@ -63,7 +74,7 @@ const UseContext = ({children}) => {
     console.log(name)
     
  
-    const userInformation={name,CreateUserWithEmailAndPassword,UserLoginWithEmailAndPassword,SignOut,loading,GoogleLogin}
+    const userInformation={GithubLogin,setName,name,CreateUserWithEmailAndPassword,UserLoginWithEmailAndPassword,SignOut,loading,GoogleLogin}
   return (
     <authContext.Provider value={userInformation}>
         {children}

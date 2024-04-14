@@ -5,7 +5,7 @@ const UpdateProfile = () => {
     console.log("OnRegister..")
   }
   return (
-   <div></div>
+   <div>Hello</div>
   )
 }
 

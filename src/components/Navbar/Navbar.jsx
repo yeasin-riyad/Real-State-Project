@@ -1,8 +1,13 @@
 
 import {  FaHouseUser } from "react-icons/fa6";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink, Navigate } from "react-router-dom";
+import UseContext from "../UseContext/UseContext";
+
+
 
 const Navbar = () => {
+  
+  const {name,SignOut}=UseContext();
   return (
     <div className="sticky top-0 z-40">
            <div className="navbar bg-base-100">
@@ -38,17 +43,37 @@ const Navbar = () => {
 
 
       <li><NavLink to='/'>Home</NavLink></li>
-      <li><NavLink to='/updateprofile'>Update Profile</NavLink></li>
+      <li>{name && <NavLink to='/updateprofile'>Update Profile</NavLink>}</li>
       <li><NavLink to='/profile'>Profile</NavLink></li>
-      <li><NavLink to='/login'>LogIn</NavLink></li>
+      {/* <li><NavLink to='/login'>LogIn</NavLink></li> */}
       
       
     </ul>
   </div>
   <div className="navbar-end">
-  <div className="w-10 rounded-full">
-          <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
-        </div>
+    {
+      name ?
+      <div className="flex items-center gap-x-2">
+         <div className="w-10 rounded-full">
+      <img className='rounded-full' alt="user Profile Image" src={name.photoURL}/>
+      
+     </div>
+     <button className="btn" onClick={()=>{
+      
+      SignOut()
+      .then(()=>{
+        console.log("user sign out")
+        // setName(null)
+      })
+        
+     }}>Logout</button>
+      </div>
+     
+     :
+    //  <button className="btn" onClick={<Navigate to='/login'></Navigate>}>Login</button>
+    <Link className="btn" to="/login">Login</Link>
+    }
+ 
   </div>
 </div>
     </div>

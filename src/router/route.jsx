@@ -1,8 +1,11 @@
+
 import Home from "../components/Home/Home";
 import Login from "../components/Login/Login";
+import PrivateRoute from "../components/PrivateRoute/PrivateRoute";
 import Profile from "../components/Profile/Profile";
 import Register from "../components/Register/Register";
 import UpdateProfile from "../components/UpdateProfile/UpdateProfile";
+import ApartMentViewDetails from "../components/ViewDetails/ApartMentViewDetails";
 import Root from "../root/Root";
 import {
   createBrowserRouter,
@@ -23,7 +26,7 @@ const router=createBrowserRouter([
           },
           {
             path:'/updateprofile',
-            element:<UpdateProfile></UpdateProfile>
+            element:<PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>
           },
           {
             path:'/profile',
@@ -36,6 +39,12 @@ const router=createBrowserRouter([
           {
             path:'/register',
             element:<Register></Register>
+          },
+          {
+            path:'/apartment/:id',
+            element:<PrivateRoute><ApartMentViewDetails></ApartMentViewDetails></PrivateRoute>,
+            loader:()=>fetch('../Apartments.json'),
+    
           }
         ]
     

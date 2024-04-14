@@ -1,6 +1,8 @@
-import { useContext } from "react"
-import { authContext } from "../ContextApi/AuthContext"
+// import { useContext } from "react"
+// import { authContext } from "../ContextApi/AuthContext"
 import { useForm} from "react-hook-form"
+import UseContext from "../UseContext/UseContext"
+import { Link } from "react-router-dom";
 
 // type Inputs = {
 //   example: string
@@ -9,7 +11,8 @@ import { useForm} from "react-hook-form"
 
 const Register = () => {
 
-  const {name,CreateUserWithEmailAndPassword,loading}=useContext(authContext)
+  // const {name,CreateUserWithEmailAndPassword,loading}=useContext(authContext)
+  const {setName,name,CreateUserWithEmailAndPassword,loading}=UseContext();
 
   const {
     register,
@@ -20,12 +23,15 @@ const Register = () => {
   // const onSubmit: SubmitHandler<Inputs> = (data) => {
 
   // }
-  const onSubmit=({Name,email,photoUrl,password})=>{
+  const onSubmit=({email,password})=>{
     // e.preventDefault()
-    CreateUserWithEmailAndPassword(Name,email,photoUrl,password)
+    CreateUserWithEmailAndPassword(email,password)
     .then((userCredential)=>{
+      
 
-      const user = userCredential.user;
+      const User = userCredential.user;
+      // setName(User.email)
+      console.log(User)
     })
     .catch((error) => {
       const errorCode = error.code;
@@ -78,7 +84,7 @@ const Register = () => {
              {errors.email && <span className="text-red-500">This field is required</span>}
            </div>
 
-           <div className="form-control">
+           {/* <div className="form-control">
              <label className="label">
                <span className="label-text">PhotoUrl</span>
              </label>
@@ -91,7 +97,7 @@ const Register = () => {
              />
                    {errors.photoUrl && <span className="text-red-500">This field is required</span>}
 
-           </div>
+           </div> */}
            
            <div className="form-control">
              <label className="label">
@@ -115,7 +121,7 @@ const Register = () => {
              <button className="btn btn-primary">Register</button>
            </div>
          </form>
-         {/* <p>Already Have an Account??Please <Link to='/login'><button className="btn btn-link">Login</button></Link></p> */}
+         <p>Already Have an Account??Please <Link to='/login'><button className="btn btn-link">Login</button></Link></p>
        </div>
      </div>
    </div>
