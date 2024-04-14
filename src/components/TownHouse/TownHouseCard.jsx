@@ -1,5 +1,6 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Link } from 'react-router-dom';
 
 AOS.init();
 
@@ -38,7 +39,7 @@ const TownHouseCard = ({townHouse}) => {
                 </div>
             </div>
             <div className="card-actions justify-end mt-3">
-              <button className="btn btn-primary text-xl">{button}</button>
+            <Link to={`/townHouse/${id}`}><button className="btn btn-primary text-xl">{button}</button></Link>
             </div>
           </div>
         </div>
