@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const StudentHousesCard = ({studentHouse}) => {
@@ -38,7 +39,7 @@ const StudentHousesCard = ({studentHouse}) => {
                   </div>
               </div>
               <div className="card-actions justify-end mt-3">
-                <button className="btn btn-primary text-xl">{button}</button>
+              <Link to={`/studentHouse/${id}`}><button className="btn btn-primary text-xl">{button}</button></Link>
               </div>
             </div>
           </div>

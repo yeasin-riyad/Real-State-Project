@@ -3,7 +3,7 @@ import "aos/dist/aos.css";
 
 AOS.init();
 
-const StudentHousingViewDetailsCard = ({studentHousingData}) => {
+const VacationRentalsViewDetailsCard = ({VacationRentals}) => {
     const {
         id,
         estate_title,
@@ -20,7 +20,7 @@ const StudentHousingViewDetailsCard = ({studentHousingData}) => {
         facilities,
         kitchen,
         car_parking
-      } = studentHousingData;
+      } = VacationRentals;
   return (
     <div data-aos="fade-up" data-aos-duration="3000">
     <div className="card  bg-base-100 shadow-xl">
@@ -140,4 +140,4 @@ const StudentHousingViewDetailsCard = ({studentHousingData}) => {
   )
 }
 
-export default StudentHousingViewDetailsCard
+export default VacationRentalsViewDetailsCard

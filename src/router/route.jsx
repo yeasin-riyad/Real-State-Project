@@ -5,8 +5,10 @@ import PrivateRoute from "../components/PrivateRoute/PrivateRoute";
 import Profile from "../components/Profile/Profile";
 import Register from "../components/Register/Register";
 import SingleFamilyViewDetails from "../components/SingleFamily/SingleFamilyViewDetails";
+import StudentHousingViewDetails from "../components/StudentHouses/StudentHousingViewDetails";
 import TownHousesViewDetails from "../components/TownHouse/TownHousesViewDetails";
 import UpdateProfile from "../components/UpdateProfile/UpdateProfile";
+import VacationRentalsViewDetails from "../components/VacationRental/VacationRentalsViewDetails";
 import ApartMentViewDetails from "../components/ViewDetails/ApartMentViewDetails";
 import Root from "../root/Root";
 import {
@@ -58,7 +60,18 @@ const router=createBrowserRouter([
             path:'/townHouse/:id',
             element:<PrivateRoute><TownHousesViewDetails></TownHousesViewDetails></PrivateRoute>,
             loader:()=>fetch('../Townhouse.json')
+          },
+          {
+            path:'/studentHouse/:id',
+            element:<PrivateRoute><StudentHousingViewDetails></StudentHousingViewDetails></PrivateRoute>,
+            loader:()=>fetch('../StudentHousing.json')
+          },
+          {
+            path:'/vacationRentals/:id',
+            element:<PrivateRoute><VacationRentalsViewDetails></VacationRentalsViewDetails></PrivateRoute>,
+            loader:()=>fetch('../VacationRentals.json')
           }
+
         ]
     
         
