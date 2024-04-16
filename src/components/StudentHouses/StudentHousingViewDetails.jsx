@@ -1,5 +1,6 @@
 import { useLoaderData, useParams } from "react-router-dom"
 import StudentHousingViewDetailsCard from "./StudentHousingViewDetailsCard";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 
 const StudentHousingViewDetails = () => {
@@ -7,6 +8,8 @@ const StudentHousingViewDetails = () => {
     const Datas=details.Student_Housing;
     const {id}=useParams()
   return (
+    <HelmetProvider>
+      <Helmet><title>StudentHousing</title></Helmet>
     <div>
     {
       Datas.map((data,index)=>{
@@ -16,6 +19,7 @@ const StudentHousingViewDetails = () => {
     }
 
   </div>
+  </HelmetProvider>
   )
 }
 

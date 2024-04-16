@@ -1,10 +1,11 @@
 import { createContext, useEffect, useState } from "react"
 import PropTypes from 'prop-types';
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut, signInWithPopup } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut, signInWithPopup, updateProfile } from "firebase/auth";
 
 import { GoogleAuthProvider } from "firebase/auth";
 import app from "../../Firebase/firebase.config";
 import { GithubAuthProvider } from "firebase/auth";
+import { ToastContainer } from "react-toastify";
 
 const Googleprovider = new GoogleAuthProvider();
 const Githubprovider = new GithubAuthProvider();
@@ -24,6 +25,7 @@ const UseContext = ({children}) => {
     
     const GithubLogin=()=>{
         setLoading(true)
+       
         return signInWithPopup(auth, Githubprovider);
     }
 
@@ -36,6 +38,12 @@ const UseContext = ({children}) => {
         setLoading(true)
         return createUserWithEmailAndPassword(auth,e,p);
 
+    }
+    const UpdateUser=(currentUser,displayName,photoURL)=>{
+        setLoading(true)
+        return updateProfile(currentUser,{
+            displayName, photoURL
+        })
     }
     const UserLoginWithEmailAndPassword=(e,p)=>{
         setLoading(true)
@@ -74,7 +82,7 @@ const UseContext = ({children}) => {
     console.log(name)
     
  
-    const userInformation={GithubLogin,setName,name,CreateUserWithEmailAndPassword,UserLoginWithEmailAndPassword,SignOut,loading,GoogleLogin}
+    const userInformation={GithubLogin,setName,name,CreateUserWithEmailAndPassword,UserLoginWithEmailAndPassword,SignOut,loading,GoogleLogin,UpdateUser}
   return (
     <authContext.Provider value={userInformation}>
         {children}

@@ -1,5 +1,6 @@
 import { useLoaderData, useParams } from "react-router-dom"
 import TownHousesViewDetailsCard from "./TownHousesViewDetailsCard";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 
 const TownHousesViewDetails = () => {
@@ -11,6 +12,10 @@ const TownHousesViewDetails = () => {
    
   
     return (
+      <HelmetProvider>
+        <Helmet>
+          <title>TownHouses</title>
+        </Helmet>
       <div>
         {
           Datas.map((data,index)=>{
@@ -20,6 +25,7 @@ const TownHousesViewDetails = () => {
         }
   
       </div>
+      </HelmetProvider>
     )
 }
 

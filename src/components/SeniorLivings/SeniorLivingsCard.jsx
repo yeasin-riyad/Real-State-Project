@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const SeniorLivingsCard = ({ seniorLiving }) => {
   const {
     id,
@@ -46,7 +48,7 @@ const SeniorLivingsCard = ({ seniorLiving }) => {
                 </div>
             </div>
             <div className="card-actions justify-end mt-3">
-              <button className="btn btn-primary text-xl">{button}</button>
+            <Link to={`/seniorLivings/${id}`}><button className="btn btn-primary text-xl">{button}</button></Link>
             </div>
           </div>
         </div>

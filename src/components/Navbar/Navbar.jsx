@@ -1,11 +1,12 @@
 
 import {  FaHouseUser } from "react-icons/fa6";
-import { Link, NavLink, Navigate } from "react-router-dom";
+import { Link, NavLink, Navigate, useNavigate } from "react-router-dom";
 import UseContext from "../UseContext/UseContext";
 
 
 
 const Navbar = () => {
+  const navigate = useNavigate();
   
   const {name,SignOut}=UseContext();
   return (
@@ -37,9 +38,7 @@ const Navbar = () => {
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      {/* <li><a>Item 1</a></li>
-      <li><a>Item 4</a></li>
-      <li><a>Item 3</a></li> */}
+     
 
 
       <li><NavLink to='/'>Home</NavLink></li>
@@ -53,17 +52,18 @@ const Navbar = () => {
   <div className="navbar-end">
     {
       name ?
-      <div className="flex items-center gap-x-2">
-         <div className="w-10 rounded-full">
-      <img className='rounded-full' alt="user Profile Image" src={name.photoURL}/>
+      <div className="flex items-center gap-x-1  lg:gap-x-2">
+         <div className="w-10 rounded-full tooltip tooltip-bottom" data-tip={name.displayName}>
+      <img className='rounded-full' alt="user Profile Image" src={name?.photoURL?name.photoURL:"https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"}/>
       
      </div>
      <button className="btn" onClick={()=>{
       
       SignOut()
       .then(()=>{
-        console.log("user sign out")
-        // setName(null)
+        
+        navigate('/')
+      
       })
         
      }}>Logout</button>

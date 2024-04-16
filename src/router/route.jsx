@@ -2,8 +2,8 @@
 import Home from "../components/Home/Home";
 import Login from "../components/Login/Login";
 import PrivateRoute from "../components/PrivateRoute/PrivateRoute";
-import Profile from "../components/Profile/Profile";
 import Register from "../components/Register/Register";
+import SeniorLivingsViewDetails from "../components/SeniorLivings/SeniorLivingsViewDetails";
 import SingleFamilyViewDetails from "../components/SingleFamily/SingleFamilyViewDetails";
 import StudentHousingViewDetails from "../components/StudentHouses/StudentHousingViewDetails";
 import TownHousesViewDetails from "../components/TownHouse/TownHousesViewDetails";
@@ -32,10 +32,7 @@ const router=createBrowserRouter([
             path:'/updateprofile',
             element:<PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>
           },
-          {
-            path:'/profile',
-            element:<Profile></Profile>
-          },
+        
           {
             path:'/login',
             element:<Login></Login>
@@ -70,6 +67,11 @@ const router=createBrowserRouter([
             path:'/vacationRentals/:id',
             element:<PrivateRoute><VacationRentalsViewDetails></VacationRentalsViewDetails></PrivateRoute>,
             loader:()=>fetch('../VacationRentals.json')
+          },
+          {
+            path:'/seniorLivings/:id',
+            element:<PrivateRoute><SeniorLivingsViewDetails></SeniorLivingsViewDetails></PrivateRoute>,
+            loader:()=>fetch('../SeniorLiving.json')
           }
 
         ]
