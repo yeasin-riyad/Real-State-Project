@@ -16,7 +16,7 @@ const Apartment = () => {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Home</title>
+        <title>HOMESTATE-Home</title>
       </Helmet>
     <div>
         <h1 data-aos="flip-left" className="text-center mt-5 text-5xl w-full bg-neutral-500 py-5 rounded-lg text-neutral-950 font-extrabold">Apartments</h1>
