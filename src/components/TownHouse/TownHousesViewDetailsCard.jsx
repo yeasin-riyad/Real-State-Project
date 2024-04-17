@@ -25,7 +25,7 @@ const TownHousesViewDetailsCard = ({townHousesData}) => {
     <div className="card  bg-base-100 shadow-xl">
       <figure>
         <img
-          className="h-[500px] object-fill object-center rounded-lg w-full"
+          className="h-[250px] object-fill object-center rounded-lg w-full md:h-[350px] lg:h-[500px]"
           src={image}
         />
       </figure>

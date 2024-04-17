@@ -19,7 +19,7 @@ const ApartMentViewDetailsCard = ({ apartmentData }) => {
     bathrooms,
     facilities,
     kitchen,
-    car_parking
+    car_parking,
   } = apartmentData;
 
   return (
@@ -27,7 +27,7 @@ const ApartMentViewDetailsCard = ({ apartmentData }) => {
       <div className="card  bg-base-100 shadow-xl">
         <figure>
           <img
-            className="h-[500px] object-fill object-center rounded-lg w-full"
+            className="h-[250px] object-fill object-center rounded-lg w-full md:h-[350px] lg:h-[500px]"
             src={image}
           />
         </figure>
@@ -52,27 +52,21 @@ const ApartMentViewDetailsCard = ({ apartmentData }) => {
           </div>
           <div className="collapse collapse-plus bg-base-200">
             <input type="radio" name="my-accordion-3" />
-            <div className="collapse-title text-xl font-medium">
-              Total Area
-            </div>
+            <div className="collapse-title text-xl font-medium">Total Area</div>
             <div className="collapse-content">
               <p>{area} Area SQ.FT</p>
             </div>
           </div>
           <div className="collapse collapse-plus bg-base-200">
             <input type="radio" name="my-accordion-3" />
-            <div className="collapse-title text-xl font-medium">
-              Status
-            </div>
+            <div className="collapse-title text-xl font-medium">Status</div>
             <div className="collapse-content">
               <p>{status}</p>
             </div>
           </div>
           <div className="collapse collapse-plus bg-base-200">
             <input type="radio" name="my-accordion-3" />
-            <div className="collapse-title text-xl font-medium">
-              Location
-            </div>
+            <div className="collapse-title text-xl font-medium">Location</div>
             <div className="collapse-content">
               <p>{location}</p>
             </div>
@@ -80,9 +74,7 @@ const ApartMentViewDetailsCard = ({ apartmentData }) => {
 
           <div className="collapse collapse-plus bg-base-200">
             <input type="radio" name="my-accordion-3" />
-            <div className="collapse-title text-xl font-medium">
-              Price
-            </div>
+            <div className="collapse-title text-xl font-medium">Price</div>
             <div className="collapse-content">
               <p>{price}</p>
             </div>
@@ -90,27 +82,25 @@ const ApartMentViewDetailsCard = ({ apartmentData }) => {
 
           <div className="collapse collapse-plus bg-base-200">
             <input type="radio" name="my-accordion-3" />
-            <div className="collapse-title text-xl font-medium">
-              Facilities
-            </div>
+            <div className="collapse-title text-xl font-medium">Facilities</div>
             <div className="collapse-content">
-              <p>{facilities.map((facility,index)=><li key={index}>{facility}</li>)}</p>
+              <p>
+                {facilities.map((facility, index) => (
+                  <li key={index}>{facility}</li>
+                ))}
+              </p>
             </div>
           </div>
           <div className="collapse collapse-plus bg-base-200">
             <input type="radio" name="my-accordion-3" />
-            <div className="collapse-title text-xl font-medium">
-              Bedrooms
-            </div>
+            <div className="collapse-title text-xl font-medium">Bedrooms</div>
             <div className="collapse-content">
               <p>{bedrooms}</p>
             </div>
           </div>
           <div className="collapse collapse-plus bg-base-200">
             <input type="radio" name="my-accordion-3" />
-            <div className="collapse-title text-xl font-medium">
-              Bathrooms
-            </div>
+            <div className="collapse-title text-xl font-medium">Bathrooms</div>
             <div className="collapse-content">
               <p>{bathrooms}</p>
             </div>
@@ -118,9 +108,7 @@ const ApartMentViewDetailsCard = ({ apartmentData }) => {
 
           <div className="collapse collapse-plus bg-base-200">
             <input type="radio" name="my-accordion-3" />
-            <div className="collapse-title text-xl font-medium">
-              Kitchen
-            </div>
+            <div className="collapse-title text-xl font-medium">Kitchen</div>
             <div className="collapse-content">
               <p>{kitchen}</p>
             </div>
