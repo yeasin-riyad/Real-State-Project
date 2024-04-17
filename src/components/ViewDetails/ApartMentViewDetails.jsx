@@ -14,7 +14,7 @@ const ApartMentViewDetails = () => {
 
   return (
     <HelmetProvider>
-      <Helmet><title>ApartMents</title></Helmet>
+      <Helmet><title>HOMESTATE-ApartMents</title></Helmet>
     <div>
       {
         Datas.map((data,index)=>{

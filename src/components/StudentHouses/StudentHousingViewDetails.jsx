@@ -9,7 +9,7 @@ const StudentHousingViewDetails = () => {
     const {id}=useParams()
   return (
     <HelmetProvider>
-      <Helmet><title>StudentHousing</title></Helmet>
+      <Helmet><title>HOMESTATE-StudentHousing</title></Helmet>
     <div>
     {
       Datas.map((data,index)=>{

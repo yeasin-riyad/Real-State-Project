@@ -67,7 +67,7 @@ const Login = () => {
     <HelmetProvider>
 
       <Helmet>
-        <title>Login</title>
+        <title>HOMESTATE-Login</title>
       </Helmet>
     <div>
       <div className="hero min-h-screen bg-base-200">

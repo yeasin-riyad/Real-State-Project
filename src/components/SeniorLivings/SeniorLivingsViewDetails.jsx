@@ -9,7 +9,7 @@ const SeniorLivingsViewDetails = () => {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>SeniorLivings</title>
+        <title>HOMESTATE-SeniorLivings</title>
       </Helmet>
     <div>
       {Datas.map((data, index) => {

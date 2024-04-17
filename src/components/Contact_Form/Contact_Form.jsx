@@ -1,7 +1,10 @@
+import { Helmet, HelmetProvider } from "react-helmet-async"
 
 
 const Contact_Form = () => {
   return (
+    <HelmetProvider>
+        <Helmet><title>HOMESTATE-Contact</title></Helmet>
     <section className="p-6 dark:bg-gray-100 dark:text-gray-900">
 	<form noValidate="" action="" className="container flex flex-col mx-auto space-y-12">
 		<fieldset className="grid grid-cols-4 gap-6 p-6 rounded-md shadow-sm dark:bg-gray-50">
@@ -70,6 +73,7 @@ const Contact_Form = () => {
 		</fieldset>
 	</form>
 </section>
+</HelmetProvider>
   )
 }
 

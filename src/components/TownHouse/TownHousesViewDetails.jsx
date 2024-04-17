@@ -14,7 +14,7 @@ const TownHousesViewDetails = () => {
     return (
       <HelmetProvider>
         <Helmet>
-          <title>TownHouses</title>
+          <title>HOMESTATE-TownHouses</title>
         </Helmet>
       <div>
         {

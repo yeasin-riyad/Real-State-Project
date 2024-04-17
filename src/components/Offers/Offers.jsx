@@ -9,7 +9,7 @@ const Offers = () => {
     <HelmetProvider>
   
         <Helmet>
-        <title>Offers</title>
+        <title>HOMESTATE-Offers</title>
 
       </Helmet>
            <Marquee>

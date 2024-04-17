@@ -14,7 +14,7 @@ const SingleFamilyViewDetails = () => {
   
     return (
       <HelmetProvider>
-        <Helmet><title>SingleFamilies</title></Helmet>
+        <Helmet><title>HOMESTATE-SingleFamilies</title></Helmet>
       <div>
         {
           Datas.map((data,index)=>{

@@ -61,7 +61,7 @@ const Register = () => {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Register</title>
+        <title>HOMESTATE-Register</title>
       </Helmet>
       <div>
         <div>

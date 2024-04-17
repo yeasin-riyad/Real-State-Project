@@ -40,7 +40,7 @@ const UpdateProfile = () => {
     <HelmetProvider>
     <div>
        <Helmet>
-        <title>UpdateProfile</title>
+        <title>HOMESTATE-UpdateProfile</title>
 
       </Helmet>
       <div>

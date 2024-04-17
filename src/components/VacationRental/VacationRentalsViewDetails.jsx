@@ -9,7 +9,7 @@ const VacationRentalsViewDetails = () => {
     const {id}=useParams()
   return (
     <HelmetProvider>
-      <Helmet><title>VacationRentals</title></Helmet>
+      <Helmet><title>HOMESTATE-VacationRentals</title></Helmet>
     <div>
             {
       Datas.map((data,index)=>{
