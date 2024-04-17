@@ -29,7 +29,7 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-30 p-2 shadow bg-base-100 rounded-box w-52 "
+              className="menu menu-sm dropdown-content mt-3 z-30 p-2 shadow bg-base-100 rounded-box "
             >
               <li>
                 <NavLink to="/">Home</NavLink>
@@ -38,6 +38,8 @@ const Navbar = () => {
                 {name && <NavLink to="/updateprofile">Update Profile</NavLink>}
               </li>
               <li>{name && <NavLink to="/offers">Offers</NavLink>}</li>
+              <li>{ <NavLink to="/contact">Contact Us</NavLink>}</li>
+
             </ul>
           </div>
           <div className="flex gap-x-2  items-center ">
@@ -63,6 +65,7 @@ const Navbar = () => {
               {name && <NavLink to="/updateprofile">Update Profile</NavLink>}
             </li>
             <li>{name && <NavLink to="/offers">Offers</NavLink>}</li>
+            <li>{ <NavLink to="/contact">Contact Us</NavLink>}</li>
           </ul>
         </div>
         <div className="navbar-end">

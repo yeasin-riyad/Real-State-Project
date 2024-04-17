@@ -1,4 +1,5 @@
 
+import Contact_Form from "../components/Contact_Form/Contact_Form";
 import Error from "../components/Error/Error";
 import Home from "../components/Home/Home";
 import Login from "../components/Login/Login";
@@ -30,6 +31,10 @@ const router=createBrowserRouter([
             path:'/',
             element:<Home></Home>
 
+          },
+          {
+            path:'/contact',
+            element:<Contact_Form></Contact_Form>
           },
           {
             path:'/updateprofile',
