@@ -129,7 +129,7 @@ const Login = () => {
             {/* <button className="btn btn-primary mt-2" onClick={googleLogin}>Google</button> */}
             <p>
               New To Website??Please
-              <Link to="/register">
+              <Link to="/register" state={location.state}>
                 <button className="btn btn-link">Register</button>
               </Link>
             </p>

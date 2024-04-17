@@ -40,7 +40,7 @@ const UseContext = ({children}) => {
 
     }
     const UpdateUser=(currentUser,displayName,photoURL)=>{
-        setLoading(true)
+        setLoading(false)
         return updateProfile(currentUser,{
             displayName, photoURL
         })
@@ -56,13 +56,16 @@ const UseContext = ({children}) => {
     useEffect(()=>{
         const subscribe= onAuthStateChanged(auth,(user)=>{
            
-            setLoading(false)
+          
             setName(null)
+            setLoading(false)
             
             if(user){
+                
                 setName(user)
-                console.log("User is Registering");
-                console.log(user)
+                
+                // console.log("User is Registering");
+                // console.log(user)
                
                 
               

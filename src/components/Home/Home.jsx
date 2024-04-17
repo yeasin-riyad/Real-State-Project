@@ -6,18 +6,17 @@ import Slider from "../Slider/Slider"
 import StudentHouses from "../StudentHouses/StudentHouses"
 import TownHouse from "../TownHouse/TownHouse"
 import VacationRentals from "../VacationRental/VacationRentals"
-import Gallaries from "../Gallary/Gallaries"
-import App from "./App"
+import HeaderSlider from "../HeaderSlider/HeaderSlider"
 
 
 
 const Home = () => {
   return (
-    <HelmetProvider>
-       {/* <Helmet><title>Home</title></Helmet> */}
+  
+      
     <div>
      
-      
+       <HeaderSlider></HeaderSlider>
         <Slider></Slider>
         <Apartment></Apartment>
         <SingleFamily></SingleFamily>
@@ -25,13 +24,12 @@ const Home = () => {
         <StudentHouses></StudentHouses>
         <VacationRentals></VacationRentals>
         <SeniorLivings></SeniorLivings>
-        {/* <Gallaries></Gallaries> */}
-        <App></App>
+     
 
        
         
     </div>
-    </HelmetProvider>
+    
   )
 }
 

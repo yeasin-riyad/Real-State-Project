@@ -11,7 +11,7 @@ const UpdateProfile = () => {
   const navigate = useNavigate();
   const { UpdateUser } = UseContext();
 
-  const { name, loading } = UseContext();
+  const { name } = UseContext();
 
   const {
     register,
@@ -26,6 +26,7 @@ const UpdateProfile = () => {
     UpdateUser(auth.currentUser, Name, photoUrl)
       .then(() => {
         toast.success("Account Successfully Updated");
+      
         setTimeout(() => {
           navigate("/");
         }, 3000);

@@ -1,6 +1,8 @@
 
+import Error from "../components/Error/Error";
 import Home from "../components/Home/Home";
 import Login from "../components/Login/Login";
+import Offers from "../components/Offers/Offers";
 import PrivateRoute from "../components/PrivateRoute/PrivateRoute";
 import Register from "../components/Register/Register";
 import SeniorLivingsViewDetails from "../components/SeniorLivings/SeniorLivingsViewDetails";
@@ -22,6 +24,7 @@ const router=createBrowserRouter([
     {
         path:'/',
         element:<Root></Root>,
+        errorElement:<Error></Error>,
         children:[
           {
             path:'/',
@@ -36,6 +39,11 @@ const router=createBrowserRouter([
           {
             path:'/login',
             element:<Login></Login>
+          },
+          {
+            path:'/offers',
+            element:<PrivateRoute><Offers></Offers></PrivateRoute>
+
           },
           {
             path:'/register',
